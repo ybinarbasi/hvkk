@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --green:#27ae60;
+    --dark-color:#219150;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --beyaz:rgba(248, 242, 242, 0.781);
+    --beyaz1:rgba(255, 255, 255, 0.781);
+}
+body{
+    font-family: var(--primary-font-family);
+    font-size: 14px;
+    background-image: url("/templatemo_559_zay_shop/assets/img/26102.jpg");
+}
+.wrapper{
+    padding: 0 0 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+}
+.wrapper .logo img{
+    
+    max-width: 500%;
+}
+
+.wrapper input{
+    border: var(--border);
+    border-radius: .5rem;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--dark-color);
+    background-color: var(--beyaz);
+    transition: all .3s ease-in-out;
+}
+.wrapper .submit_btn{
+    border: var(--beyaz);
+    border-radius: .5rem;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--black);
+    background-color: var(--beyaz1);
+    transition: all .3s ease-in-out;
+    border: var(--border);
+    border-color: #219150;
+}
+ .wrapper .submit_btn:hover{
+    background-color: var(--dark-color);
+    color: var(--beyaz1);
+ }
+.wrapper .submit_btn:focus{
+    outline: none;
+}
+.wrapper .login_with{
+    font-size: 1rem;
+    color: var(--green);
+    margin-bottom: 1rem;
+    background-color: var(--beyaz1);
+}
+.wrapper .login_with:hover{
+    color: var(--beyaz1);
+    background-color: var(--green);
+    
+ }
+
+.a{
+    color: var(--green);
+    text-decoration: none;
+}

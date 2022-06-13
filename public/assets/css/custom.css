@@ -1,0 +1,16 @@
+/*
+Custom Css
+*/
+.btn_card{
+max-width: 4rem;
+max-height: 2rem;
+font-size: small;
+}
+
+
+.btn_card:hover{
+    background-color: #f5f5f5;
+    color: #000;
+
+
+}

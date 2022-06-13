@@ -1,0 +1,49 @@
+<body>
+    <section class="wrapper col-md " >
+        <div class="container">
+             {{#if sectionFlash.message}}
+            <div class="{{sectionFlash.type}}">
+                {{sectionFlash.message}}
+            </div>
+            {{/if}}
+            <div class="col-sm-8 offset-sm-2 col-lg-8 offset-lg-3 col-xl-4 offset-xl-4 text-center my-5 ">
+                {{!-- <div class="logo ">
+                    <img src="assets/img/open-book (2).png" class="img-fluid" alt="logo"> 
+                </div> --}}
+                <form class="rounded bg-white shadow p-5 fs-4 g-md-2 " accept="/users/login" method="post">
+                    <h3 class="text-dark fw-bolder  ">GİRİŞ YAP</h3>
+                    <div class="fw-normal text-muted mb-4">
+                        Hesabin Yok mu? <a href="/users/register" class="fw-bold text-decoration-none">Hesap Oluştur</a>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" name="email" placeholder="name@example.com">
+                        <label for="floatingInput">Email adres</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" name="password" placeholder="Password">
+                        <label for="floatingPassword">Şifre</label>
+                    </div>
+                    <div class="mt-2 text-end  ">
+                        <a href="" class="text-primary fw-bold text-decoration-none text_end">Şifremi Unuttum?</a>
+                    </div>
+                        <button type="submit" class="btn submit_btn w-100 my-4">Giriş yap</button>
+                    <div class="text-center text-muted text-uppercase mb-3">Veya</div>
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-light w-100 login_with">
+                                <i class="fab fa-facebook-f mr-2"></i>
+                                Facebook
+                            </button>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="btn btn-light w-100 login_with">
+                                <i class="fab fa-google mr-2"></i>
+                                Google
+                            </button>
+                        </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
