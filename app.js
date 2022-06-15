@@ -11,9 +11,12 @@ const MongoStore = require('connect-mongo');
 app.use(express.static('public'))
 const hostname = '127.0.0.1';
 
-mongoose.connect('mongodb://127.0.0.1/my_database',{
+require("dotenv").config();
+
+mongoose.connect(process.env.MONGO_URL,{
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    
 });
 
 //const MongoStore = require('connect-mongo').default;
@@ -22,7 +25,7 @@ app.use(session({
   secret: 'test',
   resave:false,
   saveUninitialized: true,
-  store: MongoStore.create({ mongoUrl: 'mongodb://127.0.0.1/my_database' })
+  store: MongoStore.create({ mongoUrl: 'mongodb://localhost:27017/yusuf_emre' })
 }))
 
 

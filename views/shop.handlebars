@@ -25,50 +25,37 @@
             {{#if sectionFlash.message}}
             <div class="{{sectionFlash.type}}">
                 {{sectionFlash.message}}
-            </div>
+            </div>5
             {{/if}}
             <div class="col-lg-3">
-                <h1 class="h2 pb-4">Katagoriler</h1>
+                <h1 class="h2 pb-4">Ürünler</h1>
                 <ul class="list-unstyled templatemo-accordion">
-                    <li class="pb-3">
-                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
-                            Katagori
-                            <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
-                        </a>
-                        <ul class="collapse show list-unstyled pl-3">
-                             <li><a class="text-decoration-none" href="#">Edebiyat</a></li>
-                            <li><a class="text-decoration-none" href="#">Çocuk gelişim</a></li>
-                             <li><a class="text-decoration-none" href="#">Eğitim</a></li>
-                              <li><a class="text-decoration-none" href="#">Tarih</a></li>
-                               <li><a class="text-decoration-none" href="#">roman</a></li>
-                                <li><a class="text-decoration-none" href="#">Ders kitapları</a></li>
-                                 <li><a class="text-decoration-none" href="#">sanat tasarım</a></li>
-                                  <li><a class="text-decoration-none" href="#">Felsefe</a></li>
-                                   <li><a class="text-decoration-none" href="#">Bilim</a></li>
-                                    <li><a class="text-decoration-none" href="#">Çizgi roman</a></li>
-
-                        </ul>
+                    {{#each categories}}
+                    <li>
+                        <div class="templatemo-panel">
+                            <div class="templatemo-panel-header">
+                                <h2 class="text-uppercase">{{name}}</h2>
+                            </div>
+                            <div class="templatemo-panel-body">
+                                <ul class="list-unstyled">
+                                    {{#each subcategories}}
+                                    <li>
+                                        <a href="{{url}}">{{name}}</a>
+                                    </li>
+                                    {{/each}}
+                                </ul>
+                            </div>
+                        </div>
                     </li>
+                    {{/each}}
                     
                 </ul>
             </div>
 
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <div class="row">
-                    <div class="col-md-6">
-                        {{!-- <ul class="list-inline shop-top-menu pb-3 pt-1">
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none mr-3" href="#">All</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none mr-3" href="#">Men's</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none" href="#">Women's</a>
-                            </li>
-                        </ul> --}}
-                    </div>
-                    <div class="col-md-6 pb-4">
+
+                    <div class="col-md-12 pb-4">
                         <div class="d-flex">
                             <select class="form-control">
                                 <option>Featured</option>
@@ -81,10 +68,10 @@
 
                 <div class="row">
                     {{#each posts}}
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
-                                <img class="card-img rounded-0 img-fluid" src="{{post_image}}">
+                                <img class="card-img rounded-0 img-fluid" src="{{post_image}}" style="max-height: 24rem;">
                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white" href="/posts/{{_id}}"><i class="far fa-heart"></i></a></li>
@@ -116,7 +103,7 @@
                                         <i class="text-muted fa fa-star"></i>
                                     </li>
                                 </ul>
-                                <p class="text-center mb-0">{{data}}</p>
+                                <p class="text-center mb-0">{{mony}}.00₺</p>
                             </div>
                         </div>
                     </div>
@@ -140,8 +127,7 @@
         </div>
     </div>
     <!-- End Content -->
-
-    <!-- Start Brands -->
+{{!--  <!-- Start Brands -->
     <section class="bg-light py-5">
         <div class="container my-4">
             <div class="row text-center py-3">
@@ -162,7 +148,7 @@
                         </div>
                         <!--End Controls-->
 
-                        <!--Carousel Wrapper-->
+                       {{!--  <!--Carousel Wrapper-->
                         <div class="col">
                             <div class="carousel slide carousel-multi-item pt-2 pt-md-0" id="multi-item-example" data-bs-ride="carousel">
                                 <!--Slides-->
@@ -635,7 +621,7 @@
                                 </div>
                                 <!--End Slides-->
                             </div>
-                        </div>
+                        </div> --}}
                         <!--End Carousel Wrapper-->
 
                         <!--Controls-->

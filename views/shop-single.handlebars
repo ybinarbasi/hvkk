@@ -13,7 +13,6 @@
                             </div>
                             <!--End Slides-->
                         </div>
-
                     </div>
                 </div>
                 <!-- col end -->
@@ -21,7 +20,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h1 class="h1">{{post.title}}</h1>
-                            <p class="h2 py-2">₺25.00</p>
+                            <p class="h2 py-2">{{post.mony}}.00₺</p>
                             <p class="py-2">
                                 <i class="fa fa-star text-warning"></i>
                                 <i class="fa fa-star text-warning"></i>
@@ -30,21 +29,15 @@
                                 <i class="fa fa-star text-secondary"></i>
                                 <span class="list-inline-item text-dark">Puan 4.8</span>
                             </p>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <h6>Kitap Türü:</h6>
-                                </li>
-                                <li class="list-inline-item">
-                                    <p class="text-muted"><strong>Roman</strong></p>
-                                </li>
-                            </ul>
+                            <p class="py-2"></p>
+                           
 
-                            <h6>Kitap Hakkında:</h6>
+                            <h6>Ürün Hakkında:</h6>
                             <p>{{post.content}}</p>
                            
 
-                            <h6>Öneriniz :</h6>
-                            <p> {{post.content}}</p>
+                        <br>
+                        <br>
 
                             <form action="" method="GET">
                                 <input type="hidden" name="product-title" value="Activewear">
@@ -53,7 +46,8 @@
                                     <div class="col-auto">
                                         <ul class="list-inline pb-3">
                                             <li class="list-inline-item text-right">
-                                                Kiralama Gün
+                                                Kaç adet 
+                                                <p class="text-muted">{{post.date}}</p>
                                                 <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                             </li>
                                             <li class="list-inline-item"><span class="btn btn-success" id="btn-minus">-</span></li>

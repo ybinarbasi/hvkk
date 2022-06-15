@@ -5,6 +5,8 @@ const post= require('../models/post')
 
 router.get('/', (req, res) => {
     var rand = Math.floor(Math.random() * (post.length - 1)) + 2;
+      // res.send('Hello World!');
+
     post.find({}).limit(4).skip(rand).lean().then(posts=> {
         res.render('home', { posts: posts });
     })
