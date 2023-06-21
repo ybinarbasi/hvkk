@@ -25,7 +25,7 @@ app.use(session({
   secret: 'test',
   resave:false,
   saveUninitialized: true,
-  store: MongoStore.create({ mongoUrl: 'mongodb://localhost:27017/yusuf_emre' })
+  store: MongoStore.create({ mongoUrl: process.env.MONGO_URL })
 }))
 
 

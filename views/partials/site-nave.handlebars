@@ -3,9 +3,9 @@
             <div class="w-100 d-flex justify-content-between">
                 <div>
                     <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="Yusuf@gmail.com">Yusuf@gmail.com</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="İbrahim@gmail.com">İbrahim@gmail.com</a>
                     <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:0505590384">0505590384</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:05056697248">05056697248</a>
                 </div>
                 <div>
                     <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
@@ -60,6 +60,9 @@
                         {{/unless}}
                         {{#if displaylink}}
                         <li class="nav-item">
+                            <a class="nav-link" href="/liked">beğenilen ürünler</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="/users/logout">Çıkış Yap</a>
                         </li>
                          {{/if}}
@@ -74,18 +77,16 @@
                             </div>
                         </div>
                     </div>
-                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                    </a>
+                    
 
                    
                     <a class="nav-icon position-relative text-decoration-none" href="#">
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">1</span>
                     </a>
                     <a class="nav-icon position-relative text-decoration-none" href="/users/register">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+0</span>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
                     </a>
                 </div>
             </div>
@@ -103,9 +104,7 @@
             <form action="" method="get" class="modal-content modal-body border-0 p-0">
                 <div class="input-group mb-2">
                     <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
-                    <button type="submit" class="input-group-text bg-success text-light">
-                        <i class="fa fa-fw fa-search text-white"></i>
-                    </button>
+                    
                 </div>
             </form>
         </div>
